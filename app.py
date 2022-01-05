@@ -6,7 +6,10 @@ from tensorflow.keras.preprocessing import image
 import numpy as np
 import matplotlib.pyplot as plt
 
-model = tf.keras.models.load_model("resnet_model.h5")
+
+# File id: 1WdSuKJfguWX8KcYnVIYjZzT-9tQOE1Jp
+
+# model = tf.keras.models.load_model("resnet_model.h5")
 
 def load_image(image_file):
     img = Image.open(image_file)
