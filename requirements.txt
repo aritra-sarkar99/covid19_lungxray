@@ -1,0 +1,14 @@
+tensorflow-cpu==1.15.0
+streamlit==1.3.0
+# toml==0.10.2
+# keras==2.7.0
+# Keras-Preprocessing==1.1.2
+numpy==1.19.5
+matplotlib==3.5.1
+# matplotlib-inline==0.1.3
+Pillow==8.4.0
+# pandas==1.3.5
+
+
+
+
