@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 # File id: 1WdSuKJfguWX8KcYnVIYjZzT-9tQOE1Jp
 
-# model = tf.keras.models.load_model("resnet_model.h5")
+model = tf.keras.models.load_model("resnet_model.h5")
 
 def load_image(image_file):
     img = Image.open(image_file)
@@ -69,9 +69,9 @@ if image_file:
     st.subheader("Normal: " + d["normal"] + " %")
     st.subheader("Pneumonia: " + d["pneumonia"] + " %")
 
-    if float(d["covid"])>10:
+    if float(d["covid"])>30:
         st.error('The person might be infected with COVID-19')
-    elif float(d["pneumonia"])>10:
+    elif float(d["pneumonia"])>30:
         st.error('The person might be infected with Viral Pneumonia')
 
     with st.spinner('Generating chart...'):
